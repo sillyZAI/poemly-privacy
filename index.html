@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>诗灵 · 隐私政策</title>
+  <style>
+    :root {
+      --ink:      #0a0a0a;
+      --ink-muted:#555;
+      --ink-ghost:#aaa;
+      --paper:    #fafaf8;
+      --klein:    #002FA7;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { font-size: 16px; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", Georgia, serif;
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Layout ── */
+    .wrap {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 80px 32px 120px;
+    }
+
+    /* ── Header ── */
+    header {
+      margin-bottom: 72px;
+    }
+
+    .dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--klein);
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 0.875rem;
+      color: var(--ink-ghost);
+      letter-spacing: 0.03em;
+    }
+
+    /* ── Divider ── */
+    .rule {
+      width: 40px;
+      height: 1.5px;
+      background: var(--klein);
+      margin: 48px 0;
+    }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 52px;
+    }
+
+    h2 {
+      font-size: 0.8125rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink-ghost);
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 0.9375rem;
+      color: var(--ink-muted);
+      margin-bottom: 14px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    a {
+      color: var(--klein);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0, 47, 167, 0.3);
+      transition: border-color 0.2s;
+    }
+    a:hover { border-color: var(--klein); }
+
+    /* ── Footer ── */
+    footer {
+      margin-top: 96px;
+      padding-top: 32px;
+      border-top: 1px solid #e8e8e6;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--klein);
+      flex-shrink: 0;
+    }
+
+    .footer-name {
+      font-size: 0.875rem;
+      color: var(--ink);
+      letter-spacing: 0.05em;
+    }
+
+    .footer-date {
+      font-size: 0.8125rem;
+      color: var(--ink-ghost);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      .wrap { padding: 56px 24px 80px; }
+      h1 { font-size: 1.625rem; }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <div class="dot"></div>
+      <h1>隐私政策</h1>
+      <p class="subtitle">诗灵 · Poemly</p>
+    </header>
+
+    <div class="rule"></div>
+
+    <section>
+      <h2>概述</h2>
+      <p>
+        诗灵尊重并保护您的隐私。本政策说明我们如何处理您在使用本应用时产生的数据。
+        我们的核心原则是：您的诗歌属于您，我们不收集、不存储、不出售任何个人数据。
+      </p>
+    </section>
+
+    <section>
+      <h2>本地存储</h2>
+      <p>
+        您创作的所有诗歌、诗集及排版偏好，均仅保存在您的设备本地。
+        我们没有服务器存储您的内容，卸载应用后数据随之删除。
+      </p>
+    </section>
+
+    <section>
+      <h2>AI 功能</h2>
+      <p>
+        当您主动触发「AI 赏析」或「意象提取」功能时，诗歌正文会通过加密连接发送至
+        DeepSeek API 进行处理，并在收到回复后立即丢弃。
+        我们不在任何服务器留存您的诗歌内容。
+      </p>
+      <p>
+        您可以随时选择不使用 AI 功能，本应用的所有写作功能均可在离线状态下完整使用。
+      </p>
+    </section>
+
+    <section>
+      <h2>不收集的数据</h2>
+      <p>
+        我们不收集姓名、邮箱、位置、设备标识符、使用统计或任何可识别您身份的信息。
+        应用内不含任何第三方广告 SDK 或行为追踪工具。
+      </p>
+    </section>
+
+    <section>
+      <h2>Apple 登录</h2>
+      <p>
+        如果您选择使用「通过 Apple 登录」，Apple 仅向本应用提供一个不透明的匿名用户标识符。
+        我们不获取您的 Apple ID、姓名或邮箱地址（除非您主动选择共享）。
+        该标识符仅存储在您的本设备上。
+      </p>
+    </section>
+
+    <section>
+      <h2>儿童隐私</h2>
+      <p>
+        本应用不面向 13 岁以下儿童，我们不会有意收集儿童的任何个人信息。
+      </p>
+    </section>
+
+    <section>
+      <h2>政策变更</h2>
+      <p>
+        如本政策发生重大变更，我们将在应用内通知您，并更新本页面底部的日期。
+        继续使用本应用即表示您接受更新后的政策。
+      </p>
+    </section>
+
+    <section>
+      <h2>联系我们</h2>
+      <p>
+        如有任何隐私相关问题，请发送邮件至
+        <a href="mailto:your@email.com">your@email.com</a>，
+        我们将在 72 小时内回复。
+      </p>
+    </section>
+
+    <footer>
+      <div class="footer-brand">
+        <div class="footer-dot"></div>
+        <span class="footer-name">诗灵</span>
+      </div>
+      <span class="footer-date">最后更新：2026 年 4 月</span>
+    </footer>
+
+  </div>
+</body>
+</html>
